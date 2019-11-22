@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TriviaFun</string>
+
+    <string name="no_account"><u>No Account? Click Here To Register!</u></string>
+    <string name="has_account"><u>Already have an account? Login</u></string>
+
+    <string name="about_us"><b>Trivia Fun</b> is a new brand platform offered to trivia fans who like to challenge their brains and boost general knowledge online. Trivia Fun offers you a lot of opportunities to increase your brainpower. Take tests, answer trivia questions and review your tests!\n
+        \nOne thing we know for sure- learning could be really fun. Everyday Trivia Fun upload new trivia quizzes, tests and additional materials to share the knowledge with you absolute for free. All the information provided is picked carefully and checked for factual mistakes by the community of elite reviewers.</string>
+
+    <string name="test_information">If you want to challenge yourself and learn something new, take some of our online quizzes. Try any topic you like: geography, music, history, TV-shows, science, and many others.</string>
+    <string name="review_information">After each attempt, users can check their results via history section. For each question, there is additional material provided for users to let them explore more.</string>
+    <string name="progress_information">Users can also check their progress via level in the profile, different levels of questions will be rewarded different points. It can encourage users to take more attempts and keep learning.</string>
+    <string name="slogan">Visit us every day and get a new portion of fresh knowledge!</string>
+
+    <string name="develop_team">
+        - Poh Yao Chong (z5152072)\n
+          z5152072@student.unsw.edu.au\n
+        \n
+        - Yalin Chen (z5092257)\n
+          z5092257@student.unsw.edu.au\n
+        \n
+        - Jiayi Shi (z5167269)\n
+          z5167269@student.unsw.edu.au\n
+        \n
+        **Feel free to contact our team for bug report or future improvement :)
+    </string>
+
+    <string name="source_from">Resource of the trivia are getting from <b>"Open Trivia Database"</b>.</string>
+    <string name="source_website">https://opentdb.com/</string>
+    <string name="api_docs">https://opentdb.com/api_config.php</string>
+</resources>

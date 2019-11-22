@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/trivia"
+        android:icon="@drawable/trivia"
+        android:title="Trivia" />
+    <item android:id="@+id/historyPage"
+        android:icon="@drawable/history"
+        android:title="History" />
+    <item android:id="@+id/settingPage"
+        android:icon="@drawable/setting"
+        android:title="Setting" />
+</menu>

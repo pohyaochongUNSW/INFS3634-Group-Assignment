@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TriviaSelectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerCategory"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/spinnerCategory"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerDifficulty"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/spinnerDifficulty"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerType"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/spinnerType"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <Spinner
+            android:id="@+id/spinnerNumberOfQuestion"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border_black"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titleNumberOfQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/titleNumberOfQuestion" />
+
+        <TextView
+            android:id="@+id/titleNumberOfQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:text="Select Question Number:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_black"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerNumberOfQuestion"
+            app:layout_constraintStart_toStartOf="@+id/titleCategory"
+            app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+        <TextView
+            android:id="@+id/titleCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Category:"
+            app:layout_constraintStart_toStartOf="@+id/titleNumberOfQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerNumberOfQuestion" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_black"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerDifficulty"
+            app:layout_constraintStart_toStartOf="@+id/titleType"
+            app:layout_constraintTop_toBottomOf="@+id/titleType" />
+
+        <TextView
+            android:id="@+id/titleDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Difficulty Level:"
+            app:layout_constraintStart_toStartOf="@+id/titleNumberOfQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCategory" />
+
+        <Spinner
+            android:id="@+id/spinnerDifficulty"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_black"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerCategory"
+            app:layout_constraintStart_toStartOf="@+id/titleDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/titleDifficulty" />
+
+        <TextView
+            android:id="@+id/titleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Question Type:"
+            app:layout_constraintStart_toStartOf="@+id/titleDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerDifficulty" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:backgroundTint="@color/buttonColor"
+            android:text="Start your Trivia Journey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerType" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerNumberOfQuestion"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerNumberOfQuestion"
+            app:layout_constraintTop_toTopOf="@+id/spinnerNumberOfQuestion"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSubmit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
