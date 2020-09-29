@@ -81,7 +81,7 @@ public class TriviaReviewAdapter extends RecyclerView.Adapter<TriviaReviewAdapte
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
-                Uri uri = Uri.parse("http://www.google.com/#q=" + escapedQuery);
+                Uri uri = Uri.parse("http://www.google.com/search?q=" + escapedQuery);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 v.getContext().startActivity(intent);
             }
